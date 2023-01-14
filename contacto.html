@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png" alt="Logo de la barberia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="nombreApellido">Escriba su Nombre y Apellido:</label>
+            <input type="text" id="nombreApellido" class="patron" required>
+            <label for="email">Escriba su correo electronico:</label>
+            <input type="email" name="email" id="email" class="patron" placeholder="user@dominio.con" required>
+            <label for="telefono">Escriba su numero de Telefono:</label required>
+            <input type="tel" id="telefono" class="patron" placeholder="(xxx)-xxx xxxx">
+            <label for="msg">Mensaje:</label>
+            <textarea name="cajaMsg" id="msg" cols="70" rows="10" class="patron" required></textarea>
+            <fieldset>
+                <legend>¿Como le gustaria que lo contactemos?</legend> 
+                <label for="correo"><input type="radio" name="contacto" value="email" id="correo">Correo</label>
+                
+                <label for="tel"><input type="radio" name="contacto" value="llamada" id="tel">Telefono</label>
+                
+                <label for="whatsapp"><input type="radio" name="contacto" value="mensaje" id="whatsapp" checked>WhatsApp</label>
+            </fieldset>
+                
+            <fieldset>
+                <label for="jornada">¿En que horario prefiere ser atendido?</label>
+                <select name="horario" id="jornada">
+                    <option value="1">Mañana (09 - 12 horas)</option>
+                    <option value="2">Tarde (13 - 18 horas)</option>
+                    <option value="3">Noche (18 - 21 horas)</option>
+                </select>
+            </fieldset>
+            
+            <label for="" class="chequeo"><input type="checkbox" name="" id="" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+
+            <input type="submit" class="enviar" value="Enviar formulario">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Martes</td>
+                    <td>09:00 - 2100</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>09:00 - 2100</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>09:00 - 2100</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>09:00 - 2100</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>10:00 - 2100</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>10:00 - 1700</td>
+                </tr>
+            </tbody>
+            <!-- <tfoot>
+                <td>Reserve un dia antes</td>
+            </tfoot> -->
+        </table>
+    </main>
+    <footer>
+        <img src="/imagenes/logo-blanco.png" alt="logo en blanco">
+        <p class="copyright">&copy Copyright Barberia Alula 2022</p>
+        <p class="copyright">Autor: Jorge Orozco Barragán</p>
+    </footer>
+</body>
+</html>
